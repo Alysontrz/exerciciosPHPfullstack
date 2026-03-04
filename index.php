@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Principal</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
-    <h1>Escolha uma das opções abaixo: </h1>
+    <div class="container">
+    <h1>Aqui estão alugmas atividades feitas em php,css ⬇?
+</h1> 
+    <h2>Escolha uma das opções abaixo: </h1>
     <button><a href="exercicio01.php">Exercício 01</a></button>
     <button><a href="exercicio02.php">Exercício 02</a></button>
     <button><a href="exercicio03.php">Exercício 03</a></button>
@@ -15,12 +19,12 @@
     <button><a href="exercicio06.php">Exercício 06</a></button>
     <button><a href="exercicio07.php">Exercício 07</a></button>
     <button><a href="exercicio08.php">Exercício 08</a></button>
-    <button>Exercício 09</button>
-    <button>Exercício 10</button>
-    <button>Exercício 11</button>
-    <button>Exercício 12</button>
-    <button>Exercício 13</button>
-    <button>Exercício 14</button>
+    <button><a href="exercicio09.php">Exercício 09</a></button>
+    <button><a href="exercicio10.php">Exercício 10</a></button>
+    <button><a href="exercicio11.php">Exercício 11</a></button>
+    <button><a href="exercicio12.php">Exercício 12</a></button>
+    <button><a href="exercicio13.php">Exercício 13</a></button>
+    <button><a href="exercicio14.php">Exercício 14</a></button>
     <button>Exercício 15</button>
     <button>Exercício 16</button>
     <button>Exercício 17</button>

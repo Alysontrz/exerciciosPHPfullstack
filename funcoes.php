@@ -117,9 +117,66 @@
         }
     }//fim do maior horario
 
-    //8. leia 5 numeros e calcule a media
+
+        //8. leia 5 numeros e calcule a media 
     function calcularMedia($primeiro, $segundo, $terceiro, $quarto, $quinto){
-        $media = ($primeiro, $segundo, $terceiro, $quarto, $quinto)/5;
-        return "A media é: $media";
-    }//fim do metodo
-?>
+            $media = ((int)$primeiro+(int)$segundo+(int)$terceiro+(int)$quarto+(int)$quinto)/5;
+            return "A media é: $media";
+    }//fim do calcular media
+
+        //9.leia numeros ate que a soma ultrapasse a 100
+    function LerNumerosAte100($primeiro ,$segundo , $terceiro, $quarto ,$quinto){
+            $resultado = ((int)$primeiro + (int)$segundo + (int)$terceiro + (int)$quarto + (int)$quinto);
+            return "A soma final é:  $resultado";
+    }//fim do Ler numerros
+
+        //10.solicite senhas ate que uma senha valida seja informada
+    function SolicitarSenha($senha){
+        $senhaBD = 1000;
+        if($senhaBD == $senha){
+            return "Senha correta!";
+        }else{
+            return "Senha invalida!";
+        }   
+    }//fim do Solicitar senha 
+
+       //11. Classifique uma pessoa com base na idade: criança, jovem, adulto, idoso
+    function classificaoIdade($idade){
+        if($idade <= 12){
+            return "Criança";
+        }else if($idade <=18){
+                return "Jovem";
+        }else if($idade <=60){
+                return "Adulto";
+        }else{
+             return "Idoso";
+        }
+    }
+        //12.verifique se um numero é par ou ímpar.
+    function VerificarParOuimpar($num){
+        if($num %2 == 0){
+            return "par";
+        }else {
+            return "impar";
+        }
+    }//fim do 12.
+    
+        //13.Leia dois numero e exiba o maior deles
+    function LerDoisNumeros($num1, $num2){
+        if($num1 > $num2){     
+                return "$num1 maior que o $num2";
+            }else {
+                return "$num2 é maior que o $num1";
+            }
+        }
+    
+        //14.Imprima os números de 1 a 100 com para.
+    function imprimirNumeros($inicio,$fim){
+        for($i=$inicio;$i <= $fim;$i++){
+            echo "<br>".$i;
+        }      
+ 
+       
+    }
+
+    ?>
