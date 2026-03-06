@@ -26,5 +26,10 @@
     <h1>
         <?php echo $resultado;?>
     </h1>
+
+    <br>
+    <a href="index.php">Voltar para o menu</a>
+    <br></br>
+    <a href="exercicio12.php">Voltar para o exercicio anterior</a>
 </body>
 </html>

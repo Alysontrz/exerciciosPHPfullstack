@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Exercício 02</title>
+    <title>Exercício 23</title>
 </head>
 <body>
     <h1>Cálculo de Fatorial (While)</h1>
@@ -28,6 +28,8 @@
     ?>
     
     <br>
-    <a href="index.php">Voltar para o Menu</a>
+    <a href="index.php">Voltar para o menu</a>
+    <br></br>
+    <a href="exercicio22.php">Voltar para o exercicio anterior</a>
 </body>
 </html>

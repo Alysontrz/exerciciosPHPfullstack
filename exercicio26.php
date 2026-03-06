@@ -2,10 +2,10 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Exercício 05</title>
+    <title>Exercicio 26</title>
 </head>
 <body>
-    <h1>Soma e Multiplicação de Vetores</h1>
+    <h1>Exercicio 26-Soma e Multiplicação de Vetores</h1>
 
     <form method="POST">
         <h3>Digite 10 números para o Vetor A e 10 para o Vetor B:</h3>
@@ -38,6 +38,8 @@
     }
     ?>
     <br>
-    <a href="index.php">Voltar</a>
+    <a href="index.php">Voltar para o menu</a>
+    <br></br>
+    <a href="exercicio25.php">Voltar para o exercicio anterior</a>
 </body>
 </html>

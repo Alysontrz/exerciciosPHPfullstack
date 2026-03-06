@@ -31,5 +31,10 @@ escaleno</h2>
         echo "<h3>Resultado: $resultado</h3>";
     }
 ?>
+
+    <br>
+    <a href="index.php">Voltar para o menu</a>
+    <br></br>
+    <a href="exercicio15.php">Voltar para o exercicio anterior</a>
 </body>
 </html>

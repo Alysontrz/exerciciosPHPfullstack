@@ -3,10 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Exercício 22</title>
-    <style>
-        input { width: 45px; margin: 2px; text-align: center; }
-        .linha { margin-bottom: 5px; }
-    </style>
 </head>
 <body>
     <h1>Exercício 22</h1>
@@ -49,5 +45,10 @@
     return $resultado;
 }
     ?>
+
+    <br>
+    <a href="index.php">Voltar para o menu</a>
+    <br></br>
+    <a href="exercicio21.php">Voltar para o exercicio anterior</a>
 </body>
 </html>

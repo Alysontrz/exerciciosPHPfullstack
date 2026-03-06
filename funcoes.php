@@ -424,4 +424,366 @@ function somarMatriz4x4($matriz) {
 
     return "A soma de todos os elementos da matriz é: " . $soma;
 }
+
+// 30  Exercício: Cálculo de Salário com Horas Extras (50%)
+function calcularSalario($horas, $valorHora) {
+    if ($horas <= 40) {
+        // Cálculo simples se não ultrapassar 40h
+        $salario = $horas * $valorHora;
+    } else {
+        // 40 horas normais + as horas excedentes com 50% de acréscimo
+        $horasNormais = 40 * $valorHora;
+        $horasExtras = ($horas - 40) * ($valorHora * 1.5);
+        $salario = $horasNormais + $horasExtras;
+    }
+
+    return "O salário total é: R$ " . number_format($salario, 2, ',', '.');
+}
+
+// 31 Exercício: Matriz 3x3 - Valores acima da média geral
+function matrizMediaGeral($matriz) {
+    $soma = 0;
+    
+    // 1º Passo: Somar tudo para achar a média
+    for ($i = 0; $i < 3; $i++) {
+        for ($j = 0; $j < 3; $j++) {
+            $soma = $soma + $matriz[$i][$j];
+        }
+    }
+    
+    $media = $soma / 9; // 3x3 tem 9 posições
+    $resultado = "";
+
+    // 2º Passo: Comparar cada valor com a média
+    for ($i = 0; $i < 3; $i++) {
+        for ($j = 0; $j < 3; $j++) {
+            if ($matriz[$i][$j] > $media) {
+                $resultado .= $matriz[$i][$j] . " ";
+            }
+        }
+    }
+
+    return "Média: " . number_format($media, 2) . " | Valores acima: " . $resultado;
+}
+
+// 32 Exercício: Média de 3 notas - Versão Básica
+function verificarAprovacao($n1, $n2, $n3) {
+    $media = ($n1 + $n2 + $n3) / 3;
+
+    if ($media >= 7) {
+        $situacao = "Aprovado";
+    } else {
+        $situacao = "Reprovado";
+    }
+
+    return "Média: " . number_format($media, 1) . " | Situação: " . $situacao;
+}
+
+// 33 Exercício: Contar números pares em matriz 3x3
+function contarParesMatriz($matriz) {
+    $contador = 0;
+
+    for ($i = 0; $i < 3; $i++) {
+        for ($j = 0; $j < 3; $j++) {
+            // Verifica se o resto da divisão por 2 é zero
+            if ($matriz[$i][$j] % 2 == 0) {
+                $contador++;
+            }
+        }
+    }
+
+    return "A matriz possui " . $contador . " números pares.";
+}
+
+// Exercício 34: 15 primeiros termos de Fibonacci com Para (for)
+function gerarFibonacci15() {
+    $anterior = 0;
+    $atual = 1;
+    $resultado = $anterior . " " . $atual . " ";
+
+    // Começamos o laço do 3º termo até o 15º
+    for ($i = 3; $i <= 15; $i++) {
+        $proximo = $anterior + $atual;
+        $resultado .= $proximo . " ";
+        
+        // Atualiza os valores para a próxima volta
+        $anterior = $atual;
+        $atual = $proximo;
+    }
+
+    return $resultado;
+}
+
+// Exercício 35: Contar números negativos (Lógica Básica)
+function contarNegativos($texto) {
+    // Transforma o texto digitado em um array de números
+    $vetor = explode(",", $texto);
+    $contador = 0;
+
+    foreach ($vetor as $num) {
+        if (trim($num) < 0) {
+            $contador++;
+        }
+    }
+
+    return "Total de números negativos encontrados: " . $contador;
+}
+
+// Exercício 36: Cálculo de IMC e Classificação
+function calcularIMC($peso, $altura) {
+    // Cálculo do IMC
+    $imc = $peso / ($altura * $altura);
+    
+    // Classificação básica
+    if ($imc < 18.5) {
+        $classificacao = "Abaixo do peso";
+    } elseif ($imc < 25) {
+        $classificacao = "Peso normal";
+    } elseif ($imc < 30) {
+        $classificacao = "Sobrepeso";
+    } else {
+        $classificacao = "Obesidade";
+    }
+
+    return "Seu IMC é " . number_format($imc, 2) . " - Classificação: " . $classificacao;
+}
+
+// Exercício 37: Múltiplos de 4 entre 1 e 50 (com para)
+function listarMultiplosQuatro() {
+    $resultado = "";
+
+    for ($i = 1; $i <= 50; $i++) {
+        if ($i % 4 == 0) {
+            $resultado .= $i . " "; // Vai acumulando os números encontrados
+        }
+    }
+
+    return "Múltiplos de 4 encontrados: " . $resultado;
+}
+
+// Exercício 38: Soma da Diagonal Secundária (Matriz 3x3)
+function somarDiagonalSecundaria($matriz) {
+    $soma = 0;
+    
+    // A diagonal secundária em 3x3 são as posições: [0][2], [1][1] e [2][0]
+    for ($i = 0; $i < 3; $i++) {
+        $soma = $soma + $matriz[$i][2 - $i];
+    }
+
+    return "A soma da diagonal secundária é: " . $soma;
+}
+
+// Exercício 39: Contar nomes que começam com vogais
+function contarVogaisNomes($nomes) {
+    $contador = 0;
+    $vogais = ['A', 'E', 'I', 'O', 'U'];
+
+    foreach ($nomes as $nome) {
+        // Remove espaços, pega a 1ª letra e coloca em maiúsculo
+        $primeiraLetra = strtoupper(substr(trim($nome), 0, 1));
+
+        if (in_array($primeiraLetra, $vogais)) {
+            $contador++;
+        }
+    }
+
+    return "Total de nomes que começam com vogais: " . $contador;
+}
+
+// Exercício 40: Validar senha com do...while (Repita)
+function validarSenha1($digitada) {
+    $correta = "1234";
+
+    if ($digitada == $correta) {
+        return "Acesso Garantido! Bem-vindo.";
+    } else {
+        return "Senha está incorreta! Tente novamente.";
+    }
+}
+
+// Exercício 41: Contar quantas vezes o número 7 aparece
+function contarSetes($texto) {
+    // Transforma o texto em array
+    $vetor = explode(",", $texto);
+    $contador = 0;
+
+    foreach ($vetor as $num) {
+        // trim remove espaços e o == compara o valor
+        if (trim($num) == 7) {
+            $contador++;
+        }
+    }
+
+    return "O número 7 apareceu " . $contador . " vez(es).";
+}
+
+// Exercício 42: Converter Notas em Conceitos (A, B, C, D, E)
+function converterParaConceito($n1, $n2, $n3) {
+    $media = ($n1 + $n2 + $n3) / 3;
+
+    if ($media >= 9) {
+        $conceito = "A";
+    } elseif ($media >= 7) {
+        $conceito = "B";
+    } elseif ($media >= 5) {
+        $conceito = "C";
+    } elseif ($media >= 3) {
+        $conceito = "D";
+    } else {
+        $conceito = "E";
+    }
+
+    return "Média: " . number_format($media, 1) . " - Conceito: " . $conceito;
+}
+
+// Exercício 43: Cálculo de IMC (Peso / Altura²)
+function calcularIMC1($peso, $altura) {
+    $imc = $peso / ($altura * $altura);
+
+    if ($imc < 18.5) {
+        $classe = "Abaixo do peso";
+    } elseif ($imc < 25) {
+        $classe = "Peso normal";
+    } elseif ($imc < 30) {
+        $classe = "Sobrepeso";
+    } else {
+        $classe = "Obesidade";
+    }
+
+    return "IMC: " . number_format($imc, 2) . " - " . $classe;
+}
+
+// Exercício 44: Gerar vetor com quadrados de 1 a 10
+function gerarQuadrados() {
+    $vetor = [];
+
+    for ($i = 1; $i <= 10; $i++) {
+        $vetor[] = $i * $i; // Calcula o quadrado e adiciona ao vetor
+    }
+
+    // Transforma o array em uma linha de texto para exibir
+    return "Quadrados de 1 a 10: " . implode(", ", $vetor);
+}
+
+// Exercício 45: Diferença entre Maior e Menor de 8 elementos
+function calcularDiferencaExtremos($texto) {
+    // Converte o texto da entrada em um array de números
+    $vetor = explode(",", $texto);
+    
+    // Pega o maior e o menor valor da lista
+    $maior = max($vetor);
+    $menor = min($vetor);
+    
+    $diferenca = $maior - $menor;
+
+    return "Maior: $maior | Menor: $menor | Diferença: $diferenca";
+}
+
+// Exercício 46: Somar números até digitar zero
+function acumularSoma($numero, $somaAtual) {
+    // A lógica de "Repita" no PHP Web:
+    // Enquanto o número for diferente de 0, ele adiciona à soma.
+    if ($numero != 0) {
+        $novaSoma = $somaAtual + $numero;
+        return ['status' => 'continuar', 'soma' => $novaSoma];
+    } else {
+        return ['status' => 'encerrar', 'soma' => $somaAtual];
+    }
+}
+
+// Exercício 47: Filtrar múltiplos de 5
+function filtrarMultiplosCinco($texto) {
+    $vetorOriginal = explode(",", $texto);
+    $apenasMultiplos = [];
+
+    foreach ($vetorOriginal as $num) {
+        $n = trim($num);
+        // Verifica se é múltiplo de 5 e se não está vazio
+        if ($n !== "" && $n % 5 == 0) {
+            $apenasMultiplos[] = $n;
+        }
+    }
+
+    if (empty($apenasMultiplos)) {
+        return "Nenhum múltiplo de 5 foi encontrado.";
+    }
+
+    return "Números armazenados (múltiplos de 5): " . implode(", ", $apenasMultiplos);
+}
+
+// Exercício 48: Gerar tabuada de 1 a 10 (com para)
+function gerarTabuada($numero) {
+    if ($numero < 1 || $numero > 10) {
+        return "Erro: Digite um valor entre 1 e 10.";
+    }
+
+    $resultado = "Tabuada do $numero:<br>";
+
+    // O laço 'for' (para) começa em 1 e vai até 10
+    for ($i = 1; $i <= 10; $i++) {
+        $multiplicacao = $numero * $i;
+        $resultado .= "$numero x $i = $multiplicacao <br>";
+    }
+
+    return $resultado;
+}
+
+// Exercício 49: Preencher vetor com os 20 primeiros múltiplos de 5
+function gerarVinteMultiplos() {
+    $vetor = [];
+
+    // O laço roda 20 vezes
+    for ($i = 1; $i <= 20; $i++) {
+        $vetor[] = $i * 5; // Multiplica a posição por 5 e guarda
+    }
+
+    // Retorna a lista formatada como texto
+    return "Vetor preenchido: " . implode(", ", $vetor);
+}
+
+// Exercício 50: Somar duas matrizes 3x3
+function somarMatrizes($m1, $m2) {
+    $mResultado = [];
+
+    for ($i = 0; $i < 3; $i++) {
+        for ($j = 0; $j < 3; $j++) {
+            // Soma o elemento correspondente de cada matriz
+            $mResultado[$i][$j] = $m1[$i][$j] + $m2[$i][$j];
+        }
+    }
+
+    return $mResultado;
+}
+
+// Exercício 51: Encontrar o maior valor e sua posição
+function encontrarMaiorEPosicao($texto) {
+    $vetor = explode(",", $texto);
+    
+    $maior = $vetor[0]; // Começa assumindo que o primeiro é o maior
+    $posicao = 0;
+
+    foreach ($vetor as $indice => $valor) {
+        $valor = trim($valor);
+        if ($valor > $maior) {
+            $maior = $valor;
+            $posicao = $indice;
+        }
+    }
+
+    return "O maior valor é **$maior** e está na posição **$posicao** (índice do vetor).";
+}
+
+// Exercício 52: Converter número em dia da semana
+function descobrirDiaSemana($numero) {
+    switch ($numero) {
+        case 1: return "Domingo";
+        case 2: return "Segunda-feira";
+        case 3: return "Terça-feira";
+        case 4: return "Quarta-feira";
+        case 5: return "Quinta-feira";
+        case 6: return "Sexta-feira";
+        case 7: return "Sábado";
+        default: return "Número inválido! Digite de 1 a 7.";
+    }
+}
 ?>

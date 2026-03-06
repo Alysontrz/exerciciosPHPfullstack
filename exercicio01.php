@@ -70,6 +70,8 @@
         </h1>
     </form>
     <br><br>
-    <button><a href="index.php">Voltar</a></button>    
+    <br>
+    <a href="index.php">Voltar para o menu</a>
+    <br></br> 
 </body>
 </html>

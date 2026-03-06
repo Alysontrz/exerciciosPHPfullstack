@@ -2,10 +2,10 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Exercício - Dia da Semana</title>
+    <title>Exercício 24</title>
 </head>
 <body>
-    <h1>Verificar Dia da Semana</h1>
+    <h1>Exercício 24-Verificar Dia da Semana</h1>
 
     <form method="POST">
         <label>Informe um número (1-7):</label>
@@ -29,6 +29,8 @@
     ?>
     
     <br>
-    <a href="index.php">Voltar ao Menu</a>
+    <a href="index.php">Voltar para o menu</a>
+    <br></br>
+    <a href="exercicio23.php">Voltar para o exercicio anterior</a>
 </body>
 </html>

@@ -31,5 +31,10 @@
         echo "A diagonal principal é: <strong>$resultado</strong>";
     }
     ?>
+
+    <br>
+    <a href="index.php">Voltar para o menu</a>
+    <br></br>
+    <a href="exercicio18.php">Voltar para o exercicio anterior</a>
 </body>
 </html>

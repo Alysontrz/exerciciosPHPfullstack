@@ -22,6 +22,10 @@
         <?php imprimirNumeros($primeiroNumero, $segundoNumero );?>
         </h1>
     </form>
+    <br>
+    <a href="index.php">Voltar para o menu</a>
+    <br></br>
+    <a href="exercicio13.php">Voltar para o exercicio anterior</a>
 </body>
 </html>
  

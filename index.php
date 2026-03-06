@@ -51,5 +51,17 @@
     <button><a href="exercicio38.php">Exercício 38</a></button>
     <button><a href="exercicio39.php">Exercício 39</a></button>
     <button><a href="exercicio40.php">Exercício 40</a></button>
+    <button><a href="exercicio41.php">Exercício 41</a></button>
+    <button><a href="exercicio42.php">Exercício 42</a></button>
+    <button><a href="exercicio43.php">Exercício 43</a></button>
+    <button><a href="exercicio44.php">Exercício 44</a></button>
+    <button><a href="exercicio45.php">Exercício 45</a></button>
+    <button><a href="exercicio46.php">Exercício 46</a></button>
+    <button><a href="exercicio47.php">Exercício 47</a></button>
+    <button><a href="exercicio48.php">Exercício 48</a></button>
+    <button><a href="exercicio49.php">Exercício 49</a></button>
+    <button><a href="exercicio50.php">Exercício 50</a></button>
+    <button><a href="exercicio51.php">Exercício 51</a></button>
+    <button><a href="exercicio52.php">Exercício 52</a></button>
 </body>
 </html>

@@ -2,13 +2,10 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Exercício 08 - Somar Matriz</title>
-    <style>
-        input { width: 40px; text-align: center; margin: 2px; }
-    </style>
+    <title>Exercício 28</title>
 </head>
 <body>
-    <h1>Soma de Matriz 4x4</h1>
+    <h1>Exercício 28-Soma de Matriz 4x4</h1>
 
     <form method="POST">
         <h3>Preencha os valores:</h3>
@@ -40,6 +37,8 @@
     ?>
     
     <br>
-    <a href="index.php">Voltar ao Menu</a>
+    <a href="index.php">Voltar para o menu</a>
+    <br></br>
+    <a href="exercicio27.php">Voltar para o exercicio anterior</a>
 </body>
 </html>

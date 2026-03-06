@@ -25,5 +25,10 @@
         echo "<div style='padding:10px; background:#f4f4f4;'>$resultado</div>";
     }
     ?>
+
+    <br>
+    <a href="index.php">Voltar para o menu</a>
+    <br></br>
+    <a href="exercicio20.php">Voltar para o exercicio anterior</a>
 </body>
 </html>

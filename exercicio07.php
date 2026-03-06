@@ -26,7 +26,10 @@
          echo "Esse Horário é o mais tarde: $resultado";
         ?>
     </h1>
-
+    <br>
+    <a href="index.php">Voltar para o menu</a>
+    <br></br>
+    <a href="exercicio06.php">Voltar para o exercicio anterior</a>
     
 </body>
 </html>

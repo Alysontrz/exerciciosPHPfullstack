@@ -2,10 +2,10 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Exercício 06 - Soma 1 a N</title>
+    <title>Exercício 27</title>
 </head>
 <body>
-    <h1>Soma de 1 até N</h1>
+    <h1>Exercício 27-Soma de 1 até N</h1>
 
     <form method="POST">
         <p>Calcular a soma de 1 até:</p>
@@ -26,6 +26,8 @@
     ?>
     
     <br>
-    <a href="index.php">Voltar ao Menu</a>
+    <a href="index.php">Voltar para o menu</a>
+    <br></br>
+    <a href="exercicio26.php">Voltar para o exercicio anterior</a>
 </body>
 </html>

@@ -32,6 +32,10 @@
                 echo "O $numero não esta no intervalo entre $primeiroNumero e $segundoNumero";
             }
         ?>
-    </form>    
+    </form>   
+    <br>
+    <a href="index.php">Voltar para o menu</a>
+    <br></br>
+    <a href="exercicio02.php">Voltar para o exercicio anterior</a> 
 </body>
 </html>
